@@ -33,13 +33,14 @@ On Day 1, the focus was on setting up the React environment and building the ini
 
 ## 📁 Project Structure
 src/
-├── components/
-│ └── Navbar.jsx
-├── pages/
-│ └── Login.jsx
-├── App.jsx
-├── main.jsx
-└── index.css
+┣ components/
+┃ ┗ Navbar.jsx
+┣ pages/
+┃ ┣ Login.jsx
+┃ ┗ Dashboard.jsx
+┣ App.jsx
+┣ main.jsx
+┗ index.css
 
 ## 🧠 Key Learnings
 - React component structure
@@ -54,7 +55,15 @@ src/
 - Display transaction list using `.map()`
 - Improve styling for a fintech-style UI
 
----
+
+
+Built for learning and frontend skill development.
+
+# FamPay Wallet Dashboard (Frontend)
+
+This project is a React-based frontend application inspired by a fintech wallet dashboard.
+It is being developed step-by-step to strengthen React fundamentals, UI rendering,
+and state management concepts.
 
 
 
@@ -62,7 +71,7 @@ src/
 
 Day 2 focused on building the core wallet dashboard interface and rendering dynamic data.
 
----
+
 
 ## ✅ Completed Tasks (Day 2)
 
@@ -74,7 +83,7 @@ Day 2 focused on building the core wallet dashboard interface and rendering dyna
 - Implemented logout functionality
 - Improved UI structure to resemble a fintech application
 
----
+
 
 ## 🧩 Features Implemented
 
@@ -86,7 +95,7 @@ Day 2 focused on building the core wallet dashboard interface and rendering dyna
 - **Logout Button**
   - Logs the user out and returns to login screen
 
----
+
 
 ## 🛠 Tech Stack
 
@@ -96,22 +105,23 @@ Day 2 focused on building the core wallet dashboard interface and rendering dyna
 - HTML5
 - CSS (inline styling)
 
----
+
 
 ## 📁 Project Structure
+
 src/
-├── components/
-│ └── Navbar.jsx
-├── pages/
-│ ├── Login.jsx
-│ └── Dashboard.jsx
-├── data/
-│ └── transactions.js
-├── App.jsx
-├── main.jsx
-└── index.css
+┣ components/
+┃ ┗ Navbar.jsx
+┣ pages/
+┃ ┣ Login.jsx
+┃ ┗ Dashboard.jsx
+┣ data/
+┃ ┗ transactions.js
+┣ App.jsx
+┣ main.jsx
+┗ index.css
 
-
+---
 
 ## 🧠 Key Concepts Learned (Day 2)
 
@@ -158,6 +168,4 @@ These issues were resolved by:
 ---
 
 Built as part of structured React practice and frontend skill development.
-
-
 
