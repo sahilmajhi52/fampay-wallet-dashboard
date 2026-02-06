@@ -1,13 +1,37 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import transactionsData from "../data/transactions";
 
 export default function Dashboard({ onLogout }) {
-  const [balance, setBalance] = useState(12450);
-  const [amount, setAmount] = useState("");
-  const [transactions, setTransactions] = useState(transactionsData);
+  // 🔹 Load balance from localStorage (or default)
+  const [balance, setBalance] = useState(() => {
+    const savedBalance = localStorage.getItem("balance");
+    return savedBalance ? Number(savedBalance) : 12450;
+  });
 
+  // 🔹 Load transactions from localStorage (or default)
+  const [transactions, setTransactions] = useState(() => {
+    const savedTxns = localStorage.getItem("transactions");
+    return savedTxns ? JSON.parse(savedTxns) : transactionsData;
+  });
+
+  const [amount, setAmount] = useState("");
+
+  // 🔹 Save balance to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem("balance", balance);
+  }, [balance]);
+
+  // 🔹 Save transactions to localStorage whenever they change
+  useEffect(() => {
+    localStorage.setItem("transactions", JSON.stringify(transactions));
+  }, [transactions]);
+
+  // ➕ Add Money
   const addMoney = () => {
-    if (!amount || amount <= 0) return;
+    if (!amount || amount <= 0) {
+      alert("Enter a valid amount");
+      return;
+    }
 
     const newTxn = {
       id: Date.now(),
@@ -20,8 +44,17 @@ export default function Dashboard({ onLogout }) {
     setAmount("");
   };
 
+  // ➖ Spend Money
   const spendMoney = () => {
-    if (!amount || amount <= 0 || amount > balance) return;
+    if (!amount || amount <= 0) {
+      alert("Enter a valid amount");
+      return;
+    }
+
+    if (Number(amount) > balance) {
+      alert("Insufficient balance");
+      return;
+    }
 
     const newTxn = {
       id: Date.now(),
@@ -38,7 +71,7 @@ export default function Dashboard({ onLogout }) {
     <div style={{ padding: "40px", maxWidth: "500px", margin: "auto" }}>
       <h2>Wallet Dashboard</h2>
 
-      {/* Balance */}
+      {/* Balance Card */}
       <div
         style={{
           background: "#f4f6ff",
@@ -51,23 +84,31 @@ export default function Dashboard({ onLogout }) {
         <h1>₹{balance}</h1>
       </div>
 
-      {/* Input */}
+      {/* Amount Input */}
       <input
         type="number"
         placeholder="Enter amount"
         value={amount}
         onChange={(e) => setAmount(e.target.value)}
-        style={{ padding: "10px", width: "100%", marginBottom: "10px" }}
+        style={{
+          padding: "10px",
+          width: "100%",
+          marginBottom: "10px"
+        }}
       />
 
-      {/* Buttons */}
-      <div style={{ display: "flex", gap: "10px" }}>
-        <button onClick={addMoney}>Add Money</button>
-        <button onClick={spendMoney}>Spend Money</button>
+      {/* Action Buttons */}
+      <div style={{ display: "flex", gap: "10px", marginBottom: "30px" }}>
+        <button onClick={addMoney} disabled={!amount}>
+          Add Money
+        </button>
+        <button onClick={spendMoney} disabled={!amount}>
+          Spend Money
+        </button>
       </div>
 
       {/* Transactions */}
-      <h3 style={{ marginTop: "30px" }}>Recent Transactions</h3>
+      <h3>Recent Transactions</h3>
       <ul style={{ listStyle: "none", padding: 0 }}>
         {transactions.map((txn) => (
           <li
