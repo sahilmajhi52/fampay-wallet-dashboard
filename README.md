@@ -1,171 +1,204 @@
-# FamPay Wallet Dashboard (Frontend)
+💳 FamPay Wallet Dashboard (Frontend)
 
-This project is a React-based frontend application inspired by a fintech wallet dashboard.
-It is built as part of frontend practice, focusing on React fundamentals, component structure,
-and basic application flow.
+A React-based frontend application inspired by a fintech wallet dashboard.
+This project is built as part of structured frontend practice to strengthen
+React fundamentals, component design, and state management.
 
-## 🚀 Day 1 Progress
+🚀 Project Overview
 
-On Day 1, the focus was on setting up the React environment and building the initial UI.
+The application simulates a digital wallet where users can:
 
-### ✅ Completed Tasks
-- Set up a React application using Vite
-- Configured project structure
-- Implemented basic component-based architecture
-- Created Login page UI
-- Implemented login state handling using React `useState`
-- Switched view from Login page to Dashboard on button click
-- Added a simple Navbar component
-- Successfully ran and tested the application locally
+Log in
 
-## 🧩 Features (Current)
-- Login screen with email and password inputs
-- Login button updates application state
-- Dashboard screen displayed after login
-- Simple Navbar displayed across pages
+View wallet balance
 
-## 🛠 Tech Stack
-- React.js
-- JavaScript (ES6)
-- Vite
-- HTML5
-- CSS3
+Add and spend money
 
-## 📁 Project Structure
+Track transaction history
+
+The project is developed incrementally, with clear daily progress and learning outcomes.
+
+🛠 Tech Stack
+
+React.js
+
+JavaScript (ES6)
+
+Vite
+
+HTML5
+
+CSS (inline styling)
+
+🚀 Day 1 – React Setup & Login Flow
+Focus
+
+Setting up the React environment and building the base application flow.
+
+Completed Tasks
+
+Initialized React project using Vite
+
+Configured clean project structure
+
+Created reusable components
+
+Built Login page UI
+
+Implemented login state handling using useState
+
+Switched view from Login to Dashboard on successful login
+
+Added a Navbar component
+
+Ran and tested the app locally
+
+Key Learnings
+
+React component structure
+
+Props and state basics
+
+Conditional rendering
+
+Event handling in React
+
+Debugging React + Vite setup issues
+
+Project Structure (Day 1)
 src/
-┣ components/
-┃ ┗ Navbar.jsx
-┣ pages/
-┃ ┣ Login.jsx
-┃ ┗ Dashboard.jsx
-┣ App.jsx
-┣ main.jsx
-┗ index.css
+├── components/
+│   └── Navbar.jsx
+├── pages/
+│   └── Login.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
 
-## 🧠 Key Learnings
-- React component structure
-- Props and state management
-- Conditional rendering in React
-- Handling user interaction with events
-- Debugging React + Vite setup issues
+🚀 Day 2 – Wallet Dashboard UI
+Focus
 
-## 🚧 Next Steps (Day 2)
-- Design wallet dashboard UI
-- Add wallet balance card
-- Display transaction list using `.map()`
-- Improve styling for a fintech-style UI
+Building the wallet dashboard UI and rendering dynamic data.
 
+Completed Tasks
 
+Created wallet dashboard screen
 
-Built for learning and frontend skill development.
+Displayed wallet balance in a card-style UI
 
-# FamPay Wallet Dashboard (Frontend)
+Created static transactions data file
 
-This project is a React-based frontend application inspired by a fintech wallet dashboard.
-It is being developed step-by-step to strengthen React fundamentals, UI rendering,
-and state management concepts.
+Rendered transactions using .map()
 
+Applied conditional styling for debit and credit transactions
 
+Implemented logout functionality
 
-## 🚀 Day 2 Progress – Wallet Dashboard UI
+Improved UI structure for fintech look
 
-Day 2 focused on building the core wallet dashboard interface and rendering dynamic data.
+Features Implemented
 
+Wallet balance card
 
+Recent transactions list
 
-## ✅ Completed Tasks (Day 2)
+Credit (green) and debit (red) styling
 
-- Created a wallet dashboard screen
-- Displayed wallet balance in a card-style UI
-- Created a transactions data file
-- Rendered transaction list dynamically using `.map()`
-- Applied conditional styling for debit and credit transactions
-- Implemented logout functionality
-- Improved UI structure to resemble a fintech application
+Logout button
 
+Key Concepts Learned
 
+Rendering lists using .map()
 
-## 🧩 Features Implemented
+Using key prop
 
-- **Wallet Balance Card**
-  - Displays current wallet balance
-- **Recent Transactions List**
-  - Debit transactions shown in red
-  - Credit transactions shown in green
-- **Logout Button**
-  - Logs the user out and returns to login screen
+Conditional styling
 
+Separating data logic from UI
 
+Component responsibility
 
-## 🛠 Tech Stack
-
-- React.js
-- JavaScript (ES6)
-- Vite
-- HTML5
-- CSS (inline styling)
-
-
-
-## 📁 Project Structure
-
+Project Structure (Day 2)
 src/
-┣ components/
-┃ ┗ Navbar.jsx
-┣ pages/
-┃ ┣ Login.jsx
-┃ ┗ Dashboard.jsx
-┣ data/
-┃ ┗ transactions.js
-┣ App.jsx
-┣ main.jsx
-┗ index.css
+├── components/
+│   └── Navbar.jsx
+├── pages/
+│   ├── Login.jsx
+│   └── Dashboard.jsx
+├── data/
+│   └── transactions.js
+├── App.jsx
+├── main.jsx
+└── index.css
 
----
+🚀 Day 3 – Wallet Logic & State Management
+Focus
 
-## 🧠 Key Concepts Learned (Day 2)
+Turning the UI into a functional wallet using React state and business logic.
 
-- Rendering lists in React using `.map()`
-- Using `key` prop for list items
-- Conditional styling based on data values
-- Separating data logic from UI components
-- Component responsibility and clean structure
-- State-driven UI updates
+Completed Tasks
 
----
+Implemented dynamic wallet balance using useState
 
-## ❗ Challenges Faced & Fixes
+Added amount input field
 
-- JSX errors due to code outside component
-- Missing closing tags
-- Understanding `.map()` rendering
-- Correct placement of UI logic inside components
+Implemented Add Money functionality
 
-These issues were resolved by:
-- Keeping JSX only inside `return()`
-- Using clean component structure
-- Debugging errors step-by-step
+Implemented Spend Money functionality
 
----
+Updated wallet balance in real time
 
-## 📌 Current Status
+Recorded transactions dynamically
 
-- Login → Dashboard flow working
-- Wallet dashboard fully functional
-- Transactions UI rendering correctly
-- Ready for further feature expansion
+Displayed latest transactions first
 
----
+Added validation to prevent invalid actions
 
-## 🚧 Next Steps (Day 3)
+Features Implemented
 
-- Add money to wallet
-- Deduct money from wallet
-- Update balance dynamically
-- Improve form handling
-- Enhance UI interactions
+Add money to wallet
 
----
+Spend money from wallet
 
-Built as part of structured React practice and frontend skill development.
+Real-time balance updates
+
+Live transaction history
+
+Debit / credit color indicators
+
+React Concepts Used
+
+Multiple useState hooks
+
+Controlled form inputs
+
+State-driven UI updates
+
+Immutable state updates
+
+Event handling and validation
+
+Key Learnings
+
+State should never be mutated directly
+
+UI updates are driven by state
+
+Business logic belongs inside components
+
+Controlled inputs improve reliability
+
+Wallet logic mirrors real-world applications
+
+📌 Current Status
+
+Login → Dashboard flow working
+
+Wallet balance updates correctly
+
+Add / Spend money functionality working
+
+Transaction history updates dynamically
+
+Clean, readable component structure
 
