@@ -1,16 +1,60 @@
-# React + Vite
+# FamPay Wallet Dashboard (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React-based frontend application inspired by a fintech wallet dashboard.
+It is built as part of frontend practice, focusing on React fundamentals, component structure,
+and basic application flow.
 
-Currently, two official plugins are available:
+## 🚀 Day 1 Progress
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+On Day 1, the focus was on setting up the React environment and building the initial UI.
 
-## React Compiler
+### ✅ Completed Tasks
+- Set up a React application using Vite
+- Configured project structure
+- Implemented basic component-based architecture
+- Created Login page UI
+- Implemented login state handling using React `useState`
+- Switched view from Login page to Dashboard on button click
+- Added a simple Navbar component
+- Successfully ran and tested the application locally
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧩 Features (Current)
+- Login screen with email and password inputs
+- Login button updates application state
+- Dashboard screen displayed after login
+- Simple Navbar displayed across pages
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
+- React.js
+- JavaScript (ES6)
+- Vite
+- HTML5
+- CSS3
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Project Structure
+src/
+┣ components/
+┃ ┗ Navbar.jsx
+┣ pages/
+┃ ┣ Login.jsx
+┃ ┗ Dashboard.jsx
+┣ App.jsx
+┣ main.jsx
+┗ index.css
+
+## 🧠 Key Learnings
+- React component structure
+- Props and state management
+- Conditional rendering in React
+- Handling user interaction with events
+- Debugging React + Vite setup issues
+
+## 🚧 Next Steps (Day 2)
+- Design wallet dashboard UI
+- Add wallet balance card
+- Display transaction list using `.map()`
+- Improve styling for a fintech-style UI
+
+---
+
+Built for learning and frontend skill development.

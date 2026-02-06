@@ -1,11 +1,20 @@
-import Navbar from "./components/Navbar.jsx";
-import Login from "./pages/Login.jsx";
+import { useState } from "react";
+import Navbar from "./components/Navbar";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
 
 export default function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   return (
     <>
       <Navbar />
-      <Login />
+
+      {isLoggedIn ? (
+        <Dashboard onLogout={() => setIsLoggedIn(false)} />
+      ) : (
+        <Login onLogin={() => setIsLoggedIn(true)} />
+      )}
     </>
   );
 }
