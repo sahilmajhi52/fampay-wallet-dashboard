@@ -33,14 +33,13 @@ On Day 1, the focus was on setting up the React environment and building the ini
 
 ## 📁 Project Structure
 src/
-┣ components/
-┃ ┗ Navbar.jsx
-┣ pages/
-┃ ┣ Login.jsx
-┃ ┗ Dashboard.jsx
-┣ App.jsx
-┣ main.jsx
-┗ index.css
+├── components/
+│ └── Navbar.jsx
+├── pages/
+│ └── Login.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
 
 ## 🧠 Key Learnings
 - React component structure
@@ -101,18 +100,18 @@ Day 2 focused on building the core wallet dashboard interface and rendering dyna
 
 ## 📁 Project Structure
 src/
-┣ components/
-┃ ┗ Navbar.jsx
-┣ pages/
-┃ ┣ Login.jsx
-┃ ┗ Dashboard.jsx
-┣ data/
-┃ ┗ transactions.js
-┣ App.jsx
-┣ main.jsx
-┗ index.css
+├── components/
+│ └── Navbar.jsx
+├── pages/
+│ ├── Login.jsx
+│ └── Dashboard.jsx
+├── data/
+│ └── transactions.js
+├── App.jsx
+├── main.jsx
+└── index.css
 
----
+
 
 ## 🧠 Key Concepts Learned (Day 2)
 
