@@ -57,4 +57,108 @@ src/
 
 ---
 
-Built for learning and frontend skill development.
+
+
+## 🚀 Day 2 Progress – Wallet Dashboard UI
+
+Day 2 focused on building the core wallet dashboard interface and rendering dynamic data.
+
+---
+
+## ✅ Completed Tasks (Day 2)
+
+- Created a wallet dashboard screen
+- Displayed wallet balance in a card-style UI
+- Created a transactions data file
+- Rendered transaction list dynamically using `.map()`
+- Applied conditional styling for debit and credit transactions
+- Implemented logout functionality
+- Improved UI structure to resemble a fintech application
+
+---
+
+## 🧩 Features Implemented
+
+- **Wallet Balance Card**
+  - Displays current wallet balance
+- **Recent Transactions List**
+  - Debit transactions shown in red
+  - Credit transactions shown in green
+- **Logout Button**
+  - Logs the user out and returns to login screen
+
+---
+
+## 🛠 Tech Stack
+
+- React.js
+- JavaScript (ES6)
+- Vite
+- HTML5
+- CSS (inline styling)
+
+---
+
+## 📁 Project Structure
+src/
+┣ components/
+┃ ┗ Navbar.jsx
+┣ pages/
+┃ ┣ Login.jsx
+┃ ┗ Dashboard.jsx
+┣ data/
+┃ ┗ transactions.js
+┣ App.jsx
+┣ main.jsx
+┗ index.css
+
+---
+
+## 🧠 Key Concepts Learned (Day 2)
+
+- Rendering lists in React using `.map()`
+- Using `key` prop for list items
+- Conditional styling based on data values
+- Separating data logic from UI components
+- Component responsibility and clean structure
+- State-driven UI updates
+
+---
+
+## ❗ Challenges Faced & Fixes
+
+- JSX errors due to code outside component
+- Missing closing tags
+- Understanding `.map()` rendering
+- Correct placement of UI logic inside components
+
+These issues were resolved by:
+- Keeping JSX only inside `return()`
+- Using clean component structure
+- Debugging errors step-by-step
+
+---
+
+## 📌 Current Status
+
+- Login → Dashboard flow working
+- Wallet dashboard fully functional
+- Transactions UI rendering correctly
+- Ready for further feature expansion
+
+---
+
+## 🚧 Next Steps (Day 3)
+
+- Add money to wallet
+- Deduct money from wallet
+- Update balance dynamically
+- Improve form handling
+- Enhance UI interactions
+
+---
+
+Built as part of structured React practice and frontend skill development.
+
+
+
